@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Poiret+One&display=swap');
+
+html {
+  overflow-x: hidden;
+  background-attachment: scroll;
+}
+
+.main-wrapper {
+  width: 100vw;
+  background-color: #615154;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ----- Title CSS ----- */
+.title-wrapper {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tw-box {
+  width: 70%;
+  height: 75%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-content {
+  font-family: 'Poiret One', cursive;
+  font-size: 100px;
+  font-weight: 700;
+
+  background: -webkit-linear-gradient(145deg, #BCF4DE, #DED6D1, #FFB7C3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  padding: 30px;
+  
+  border: 5px solid #BCF4DE;
+  animation-name: border-ease;
+  animation-duration: 2s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+  
+@keyframes border-ease {
+  0% {
+    border: 5px solid #BCF4DE;
+  }
+  50% {
+    border: 5px solid #DED6D1;
+  }
+  100% {
+    border: 5px solid #FFB7C3;
+  }
+}
+
+.subtitle {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  color: #eec6ca;
+  background-color: #615154;
+
+  margin-top: -12px;
+  padding: 0px 10px;
+}
+
+
+/* ----- Button CSS ----- */
+.q-link {
+  margin-top: 50px;
+  padding: 10px 0px;
+
+  font-family: 'Poiret One', cursive;
+  font-size: 30px;
+}
+
+.q-button {
+  color: #eec6ca;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.q-button:hover {
+  color: #615154;
+  font-weight: 700;
+}
+
+.q-link:hover {
+  margin-top: 50px;
+  padding: 10px 0px;
+
+  background-color: #BCF4DE;
+  animation-name: button-ease;
+  animation-duration: 2s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  }
+  
+@keyframes button-ease {
+  0% {
+    background-color: #BCF4DE;
+  }
+  50% {
+    background-color: #DED6D1;
+  }
+  100% {
+    background-color: #FFB7C3;
+  }
+}
+
+
+/* ----- Questions CSS ----- */
+.questions-wrapper {
+  height: 200vh;
+  width: 100vw;
+  background-color: 615154;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.questions-box {
+  height: 80%; 
+  width: 75%;
+  background-color: darkslategray;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.question-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #eec6ca;
+}
+
+.question-title {
+  width: 25%;
+  background-color: #BCF4DE;
+
+  font-family: 'Poiret One', cursive;
+  font-size: 45px;
+  text-align: center;
+}
+
+details {
+  width: 75%;
+  padding: 50px;
+  background-color: #292929;
+}
+
+.question {
+  font-family: 'Poiret One', cursive;
+  font-size: 30px;
+}
+
+.sum-q {
+  border-bottom: 3px solid;
+  border-image: linear-gradient(145deg, #BCF4DE, #DED6D1, #FFB7C3) 1;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.question-content {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.q-icon {
+  float: right;
+}
+
+details[open] .q-icon {
+  transform: rotate(180deg);
+}
+
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+
